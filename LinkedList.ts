@@ -1,6 +1,6 @@
 import { ListNode } from "./ListNode";
 
-class MyLinkedList {
+export class LinkedList {
 	head: ListNode | null;
 
 	constructor() {
@@ -35,7 +35,7 @@ class MyLinkedList {
 	// Method to print the linked list
 	printList(): void {
 		let current = this.head;
-		while (current !== null) {
+		while (current != null) {
 			console.log(current.data + " -> ");
 			current = current.next;
 		}
